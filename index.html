@@ -13,11 +13,11 @@
   <meta property="og:description" content="Hotel boutique en el corazón de Barrio Manila, Medellín. Desayuno incluido, pet friendly, rooftop y reserva directa." />
   <meta property="og:url" content="https://www.manilahotelboutique.com/" />
   <meta property="og:site_name" content="Manila Hotel Boutique" />
-  <meta property="og:image" content="images/hero-fachada-manila.jpg" />
+  <meta property="og:image" content="./images/hero-fachada-manila.jpg?v=6" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Manila Hotel Boutique - Medellín" />
   <meta name="twitter:description" content="Hotel boutique en Barrio Manila, Medellín. Reserva directa, desayuno incluido y pet friendly." />
-  <meta name="twitter:image" content="images/hero-fachada-manila.jpg" />
+  <meta name="twitter:image" content="./images/hero-fachada-manila.jpg?v=6" />
   <title>Manila Hotel Boutique - Medellín, Barrio Manila</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
     "name": "Manila Hotel Boutique",
     "description": "Hotel boutique de diseño industrial en Barrio Manila, Medellín. Desayuno continental incluido, pet friendly y reserva directa.",
     "url": "https://www.manilahotelboutique.com/",
-    "image": "images/hero-fachada-manila.jpg",
+    "image": "./images/hero-fachada-manila.jpg?v=6",
     "telephone": "+57 604 296 8080",
     "address": {
       "@type": "PostalAddress",
@@ -116,7 +116,7 @@
     .mobile-nav-close { position:absolute; top:24px; right:24px; color:var(--white); font-size:2rem; cursor:pointer; background:none; border:0; }
 
     .hero { position:relative; min-height:600px; height:100dvh; display:flex; align-items:center; overflow:hidden; }
-    .hero-bg { position:absolute; inset:0; background-image:url("images/hero-fachada-manila.jpg"); background-size:cover; background-position:center; transform:scale(1.05); transition:transform 8s ease; }
+    .hero-bg { position:absolute; inset:0; background-image:url("./images/hero-fachada-manila.jpg?v=6"); background-size:cover; background-position:center; transform:scale(1.05); transition:transform 8s ease; }
     .hero-bg.loaded { transform:scale(1); }
     .hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.48) 58%,rgba(0,0,0,.22) 100%); }
     .hero-content { position:relative; z-index:2; max-width:760px; margin:0 auto; text-align:center; }
@@ -127,8 +127,8 @@
     .hero h1 em { font-style:italic; color:var(--gold); }
     .hero p { color:rgba(255,255,255,.82); font-size:1.1rem; line-height:1.7; margin:0 auto 40px; max-width:620px; }
     .hero-ctas { display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:center; }
-    .hero-badges { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; max-width:760px; margin-top:32px; }
-    .hero-badge { display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid rgba(255,255,255,.18); border-radius:var(--radius); background:rgba(0,0,0,.18); backdrop-filter:blur(8px); color:rgba(255,255,255,.82); font-size:12px; line-height:1.4; }
+    .hero-badges { display:flex; flex-direction:column; gap:10px; margin-top:32px; }
+    .hero-badge { display:flex; align-items:center; gap:10px; color:rgba(255,255,255,.75); font-size:12px; }
     .hero-badge .icon { width:20px; height:20px; padding:4px; border-radius:50%; background:var(--gold); color:var(--dark); }
     .hero-badges-grid {
       display:grid;
@@ -305,54 +305,12 @@
       transform:translateY(-6px);
       border-color:rgba(201,169,110,.55);
       box-shadow:0 24px 55px rgba(15,15,15,.12);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,1), rgba(248,245,240,.92)),
-        radial-gradient(circle at 50% 0%, rgba(201,169,110,.24), transparent 58%);
     }
-    .score-icon {
-      position:relative;
-      z-index:1;
-      margin:0 auto 18px;
-      width:32px;
-      height:32px;
-      color:var(--gold);
-    }
-    .score-num {
-      position:relative;
-      z-index:1;
-      font-family:"Playfair Display",serif;
-      font-size:clamp(2.6rem, 4.2vw, 3.55rem);
-      font-weight:700;
-      color:var(--dark);
-      line-height:.95;
-      letter-spacing:-.035em;
-    }
-    .score-stars {
-      position:relative;
-      z-index:1;
-      color:var(--gold);
-      font-size:.95rem;
-      letter-spacing:2.5px;
-      margin:12px 0 10px;
-    }
-    .score-source {
-      position:relative;
-      z-index:1;
-      font-size:11px;
-      letter-spacing:1.9px;
-      text-transform:uppercase;
-      color:var(--dark);
-      font-weight:800;
-    }
-    .score-note {
-      position:relative;
-      z-index:1;
-      margin:10px auto 0;
-      max-width:190px;
-      font-size:12px;
-      color:var(--text-lt);
-      line-height:1.55;
-    }
+    .score-icon { position:relative; z-index:1; margin:0 auto 18px; width:32px; height:32px; color:var(--gold); }
+    .score-num { position:relative; z-index:1; font-family:"Playfair Display",serif; font-size:clamp(2.6rem, 4.2vw, 3.55rem); font-weight:700; color:var(--dark); line-height:.95; letter-spacing:-.035em; }
+    .score-stars { position:relative; z-index:1; color:var(--gold); font-size:.95rem; letter-spacing:2.5px; margin:12px 0 10px; }
+    .score-source { position:relative; z-index:1; font-size:11px; letter-spacing:1.9px; text-transform:uppercase; color:var(--dark); font-weight:800; }
+    .score-note { position:relative; z-index:1; margin:10px auto 0; max-width:190px; font-size:12px; color:var(--text-lt); line-height:1.55; }
 
     .location { background:var(--dark2); }
     .location-content .section-title { color:var(--white); margin-bottom:24px; }
@@ -417,8 +375,7 @@
     @media (max-width:1024px) {
       .about-grid, .location-grid { grid-template-columns:1fr; gap:48px; }
       .about-images { height:360px; }
-      .rooms-grid { grid-template-columns:1fr; }
-      .reviews-scores { grid-template-columns:1fr 1fr; }
+      .rooms-grid, .reviews-scores { grid-template-columns:1fr 1fr; }
       .amenities-grid { grid-template-columns:repeat(2,1fr); }
       .footer-grid { grid-template-columns:1fr 1fr; gap:32px; }
       .trust-item { padding:12px 24px; }
@@ -534,9 +491,9 @@
             </a>
           </div>
           <div class="hero-badges hero-badges-grid" aria-label="Beneficios principales">
-            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span>Desayuno incluido</span></div>
-            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span>Pet friendly</span></div>
-            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span>9/10 Booking & Expedia</span></div>
+            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>Desayuno incluido</div>
+            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>Pet friendly</div>
+            <div class="hero-badge"><span class="icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>9/10 Booking & Expedia</div>
           </div>
         </div>
       </div>
@@ -572,8 +529,8 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-images fade-up">
-            <div class="about-img-main"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-17-at-11.37.07-PM-3-600x400.jpeg" alt="Interior de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
-            <div class="about-img-secondary"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-17-at-11.31.40-PM-1-600x400.jpeg" alt="Habitación de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+            <div class="about-img-main"><img src="./images/habitacion-ventanal-manila.jpg?v=6" alt="Habitación con ventanal de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+            <div class="about-img-secondary"><img src="./images/habitacion-industrial-manila.jpg?v=6" alt="Habitación de estilo industrial en Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
             <div class="about-gold-tag" aria-label="Hotel boutique destacado en Manila"><strong>#1</strong><span>Boutique</span><span>en Manila</span></div>
           </div>
           <div class="about-content fade-up">
@@ -654,11 +611,11 @@
     <section class="gallery" id="galeria">
       <div class="container"><div class="gallery-header fade-up"><p class="section-label">Galería</p><h2 class="section-title">Una imagen vale más<br />que mil palabras</h2></div></div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-17-at-11.37.07-PM-1-600x400.jpeg" alt="Vista de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
-        <div class="gallery-item"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-9.10.33-PM-2-600x400.jpeg" alt="Habitación de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
-        <div class="gallery-item"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-9.12.48-PM-3-600x400.jpeg" alt="Habitación deluxe de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
-        <div class="gallery-item"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-9.11.47-PM-1-600x400.jpeg" alt="Detalle interior de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
-        <div class="gallery-item"><img src="https://www.manilahotelboutique.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-17-at-11.31.41-PM-1-600x400.jpeg" alt="Espacio de descanso en Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item"><img src="./images/desayunador-manila.jpg?v=6" alt="Vista de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item"><img src="./images/habitacion-lampara-libro.jpg?v=6" alt="Habitación de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item"><img src="./images/habitacion-dorada-manila.jpg?v=6" alt="Habitación deluxe de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item"><img src="./images/habitacion-azul-manila.jpg?v=6" alt="Detalle interior de Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item"><img src="./images/fachada-detalle-manila.jpg?v=6" alt="Espacio de descanso en Manila Hotel Boutique" loading="lazy" decoding="async" /></div>
       </div>
     </section>
 
